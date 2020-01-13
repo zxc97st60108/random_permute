@@ -15,7 +15,8 @@ void swap(int *a , int *b)
 
 void randomize(int arr[], int n)
 {
-    srand(time(NULL));  //一開始系統都是 0，所以每次產生出來的亂數會一樣。用 srand() 函數改變一開始的亂數值。通常以目前的時間傳入，也就是使用 time() 函數
+    srand(time(NULL));  //一開始系統都是 0，所以每次產生出來的亂數會一樣。
+    //用 srand() 函數改變一開始的亂數值。通常以目前的時間傳入，也就是使用 time() 函數
     for(int i = n-1;i>0;i--)
     {
         int j = rand() % (i + 1);
